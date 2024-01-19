@@ -16,7 +16,7 @@ const ContactForm = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = event => {
-    event.preventDefaut();
+    event.preventDefault();
 
     const isInContacts = contacts.some(
       contact => contact.name.toLowerCase().trim() === name.toLowerCase().trim()
